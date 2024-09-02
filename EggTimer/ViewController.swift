@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let EggTimes: [String : Int] = ["Soft": 5, "Medium": 7, "Hard": 12]
 
-
+    @IBAction func eggPressed(_ sender: UIButton) {
+        
+        let hardness: String? = sender.currentTitle
+        print(EggTimes[hardness!]!)
+    }
+    
 }
